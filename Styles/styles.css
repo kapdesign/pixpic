@@ -13,6 +13,11 @@
 .header-text-content-child{
     padding: 15% 0% 0% 10%;
 }
+.header-text-content-child h1{
+    border: 0px solid red;
+    width: 30%;
+    font-size: 98;
+}
 .header-text-content-btn-display{
     display: flex;
     margin-top: 3.5%;
@@ -24,6 +29,7 @@
     color: white; 
     cursor: pointer;
     width: 100px;
+    text-align: center;
     padding: 10px 0px;
     margin: 0px 5px;
 }
@@ -46,7 +52,7 @@
 }
 .topnav.scrolled {
     background-color: #13a7f7;
-    transition: .25s;
+    transition: background-color .25s;
 }
 .topnav-child-1{
     padding:0vw 10vw; 
@@ -156,41 +162,43 @@
 
 .mockup{
     width: 100%;
-    height: 500px;
+    height: auto;
     text-align: center;
     margin: 100px 0px;
+    overflow: hidden;
 }
 .mockup-child{
     display: inline-block;
     width: 80%;
-    height: 100%;
+    height: auto;
     position: relative;
     border: 0px solid red;
     text-align: left;
 }
 .mockup-bg{
-    display: inline-block; 
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 40%;
-    height: 100%;
+    float: left;
+    width: 50%;
+    height: 550px;
     border: 0px solid red;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .mockup-part-right{
-    display: inline-block; 
-    position: absolute;
-    top: 25%;
-    right: 0%;
+    float: left;
     width: 50%;
     border: 0px solid red;
+    padding-top: 55px;
+}
+.mockup-part-right h1{
+    display: inline-block;
+    width: 100%;
 }
 .mockup-part-right-btn{
     display: inline-block;
-    padding: 15px 25px;
+    width: 180px;
+    padding: 20px 0px;
+    text-align: center;
     border-radius: 25px; 
     background-color: #149DE5; 
     color: white; 
@@ -209,12 +217,7 @@
     /* For mobile phones(500px), For tablets(800px): */
 
 .header{
-    background-image: url(Pictures/bg_01.png); 
-    background-size: auto 100%; 
-    background-position: center;
-    width: 100%; 
-    height: 999px; 
-    position: relative;
+   
 }
 .header-img-decor-1{
     position: static; 
@@ -226,22 +229,26 @@
     padding-top: 20%;
 }
 .header-img-decor-1 div{
-    width: 75%;
+    width: 50%;
 }
 .header-text-content{
-    text-align: left;
+    text-align: center;
 }
 .header-text-content-child{
     display: inline-block;
-    padding: 15% 0% 0% 10%;
+    padding: 0;
+    padding-top: 15%;
+    text-align: center;
+}
+.header-text-content-child h1{
+    display: inline-block;
+    width: auto;
+    font-size: 50;
 }
 .header-text-content-btn-display{
+    display: inline-block;
     margin-top: 11%; 
-    width: 100%;
-}
-.header-text-content-btn{
-    width: 40%;
-    height: 5%;
+    width: auto;
 }
 
 .topnav-logo-display{
@@ -284,36 +291,10 @@
 }
 
 .mockup{
-    width: 100%; 
-    height: 800px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    margin-bottom: 125px;
+    margin: 50px 0px;
 }
-.mockup-part-display{
-    display: inline-block; 
-    width: 80%; 
-    height: 80%;
+.mockup-part-right h1{
+    font-size: 20px;
 }
-.mockup-part-left{
-    display: inline-block; 
-    width: 100%; 
-    height: 100%; 
-    border: 0px solid red;
-}
-.mockup-part-right{
-    display: inline-block; 
-    padding: 2% 10% 0% 10%; 
-    border: 0px solid red;
-}
-.mockup-part-right-btn{
-    width: 55%; 
-    height: 8%; 
-   
-}
-
-
-
 
 }
